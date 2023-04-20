@@ -6,16 +6,4 @@
   background-color: #FFFFFF;
 }
 
-.header-container{
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 24px;
-  color: #3A4895;
-}
 
-.shoppingcart-icon{
-  font-size: 1.5em;
-}

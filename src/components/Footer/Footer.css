@@ -1,0 +1,13 @@
+.footer-container{
+    padding: 10px;
+    color: white;
+    background-color: #3A4895;
+}
+
+.contact-btn{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
