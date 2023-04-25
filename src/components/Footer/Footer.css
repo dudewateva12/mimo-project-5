@@ -2,6 +2,10 @@
     padding: 10px;
     color: white;
     background-color: #3A4895;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
 }
 
 .contact-btn{
@@ -10,4 +14,10 @@
     color: white;
     border: none;
     font-size: 16px;
+    padding-right: 20px;
+}
+
+.footer-container p{
+    background-color: transparent;
+    padding-left: 20px;
 }

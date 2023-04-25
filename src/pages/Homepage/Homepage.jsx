@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import './Homepage.css'
 import axios from 'axios'
 import ProductCard from '../../components/ProductCard/ProductCard'
+import FilterButtons from '../../components/FilterButtons/FilterButtons'
 
 
 
 function Homepage() {
-  //create state for category
+  //create state for category  
 const[product, setProduct] = useState([])
 
 //get api data when page loads
@@ -26,7 +27,8 @@ useEffect(
 
 
   return (
-    <div className='home-container'>
+    <div className='home-container'>   
+    <FilterButtons />   
       <div className='category-container'>
         {
           product.map(item=><ProductCard key={item.id} product={item} />)

@@ -13,16 +13,18 @@ function FilterButtons() {
           //call api to get data
           axios.get('https://fakestoreapi.com/products/categories')
           .then(res=>{
+            console.log(res.data)
             setFilterButton(res.data)
           })
           .catch(err=> console.log(err))
         }, []
       )
+      
     
 
   return (
-    <div className='filterButton'>
-        {filterButton.map((item) => (<p onClick={() => setFilterButton(item)}>{item}</p>))}
+    <div className='filter-button'>
+       
         </div>
       
   )
