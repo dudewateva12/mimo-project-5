@@ -10,6 +10,9 @@ function Homepage() {
   //create state for category  
 const[product, setProduct] = useState([])
 
+// /* NOTE added a new state to be updated so product can stay the same and not change. */
+const[productHold, setProductHold] = useState([])
+
 //get api data when page loads
 //https://fakestoreapi.com/products/categories
 
@@ -20,6 +23,7 @@ useEffect(
     axios.get('https://fakestoreapi.com/products')
     .then(res=>{
       setProduct(res.data)
+      setProductHold(res.data)
     })
     .catch(err=> console.log(err))
   }, []
@@ -27,12 +31,20 @@ useEffect(
 
 
   return (
-    <div className='home-container'>   
-    <FilterButtons />   
+    <div className='home-container'>  
+
+
+    {/* NOTE added props to FilterButtons  */}
+    <FilterButtons product={product} setProductHold={setProductHold}/>   
+
+
+    {/* NOTE replaced product with productHold  */}
       <div className='category-container'>
+        
         {
-          product.map(item=><ProductCard key={item.id} product={item} />)
+          productHold.map(item=><ProductCard key={item.id} product={item} />)
         }
+        
       </div>
     </div>
   )

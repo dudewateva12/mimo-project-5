@@ -3,6 +3,11 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import './App.css'
 import Homepage from './pages/Homepage/Homepage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Details from './pages/Details/Details'
+import ContactUs from './pages/ContactUs/ContactUs'
+import Favorites from './pages/Favorites/Favorites'
+import FavoritesContextProvider from './Contexts/FavoritesContext'
 
 
  
@@ -10,12 +15,30 @@ import Homepage from './pages/Homepage/Homepage'
 function App() {
   const [count, setCount] = useState(0)
   return (
-    
-    <div className='App'>
+
+    <BrowserRouter>
+    <FavoritesContextProvider>
       <Header />
-      <Homepage />
+
+      <Routes>
+      
+      <Route path='/' element={<Homepage />} />
+
+      <Route path='/details/:productId' element={<Details />} />
+
+      <Route path='/contactus' element={<ContactUs />} />
+
+      <Route path='/favorites' element={<Favorites />} />
+      
+      
+
+      </Routes>
+
       <Footer />
-    </div>
+      </FavoritesContextProvider>
+    </BrowserRouter>
+    
+    
   )
 }
 

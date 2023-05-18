@@ -1,0 +1,28 @@
+.favorites-container{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.product-descriptors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
+}
+
+.favorites-container h1{
+    text-align: center;
+
+}
+.checkout-btn{
+    background-color: yellow;
+    max-width: 8%;
+    padding: 10px;
+}
+
+.favorites-characters{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

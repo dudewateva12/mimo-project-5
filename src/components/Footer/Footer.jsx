@@ -1,11 +1,12 @@
 import React from 'react'
 import './Footer.css'
+import {Link} from 'react-router-dom'
 
 function Footer() {
   return (
     <div className='footer-container'>
       <p>Made with ❤️ by mimo</p>
-      <button className='contact-btn'>Contact Us</button>
+      <Link to={`/contactus`}>Contact Us</Link>
     </div>
   )
 }

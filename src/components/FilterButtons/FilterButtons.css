@@ -1,0 +1,15 @@
+.filter-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+}
+
+
+.filter-button p{
+    cursor: pointer;
+    color: #5264C3;
+    font-size: 18px;
+}
+
+

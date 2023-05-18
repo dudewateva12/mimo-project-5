@@ -1,11 +1,18 @@
+*{
+    background-color: #ececec38;
+}
 .home-container{
     min-height: 100vh;
+    
 }
 
 .category-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
+
+
 
 

@@ -7,6 +7,9 @@
     /* justify-content: space-between; */
     padding-bottom: 10px;
     background-color: white;
+    border-radius: 10px;
+    height: 80%;
+    
 }
 
 .product-card img{
@@ -16,6 +19,7 @@
     border-radius: 12px;
     align-items: center;
     justify-content: center;
+    background-color: white;
 
 }
 
@@ -25,17 +29,37 @@
     /* padding: 8px 16px; */
     color: black;
     cursor: pointer; 
+    background-color: white;
 }
 
 #product-title{
     font-weight: bold;
+    background-color: white;
 }
 
 #product-price{
     font-weight: bold;
+    background-color: white;
     padding-top: 10px;
 }
 
 #product-category{
     color: #949494;
+    background-color: white;
+}
+
+#see-details-btn{
+    background-color: white;
+    text-decoration: none;
+    
+}
+
+.heart-icon{
+    position: relative;
+    top: 37px;
+    align-self: flex-end;
+    right: 3px;
+    color: gray;
+    font-size: 35px;
+    background-color: transparent;
 }
