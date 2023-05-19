@@ -1,28 +1,51 @@
+section{
+    display: flex;
+    position: relative;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
 .favorites-container{
-    min-height: 90vh;
+    height: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
 .product-descriptors{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     color: gray;
 }
 
+
+
+/* *** Added these rules  */
+.product-descriptors h4{
+    width: 50%;
+}
+.product-descriptors div{
+    width: 50%;
+    display: flex;
+}
+.total-and-checkout{
+    align-self: flex-end;
+}
+
+
+
+
 .favorites-container h1{
     text-align: center;
-
 }
 .checkout-btn{
     background-color: yellow;
-    max-width: 8%;
     padding: 10px;
 }
 
 .favorites-characters{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 }

@@ -8,7 +8,7 @@ import { FavoritesContext } from '../../Contexts/FavoritesContext';
 function ProductCard({product}) {
  //change to use global state
   //NOTE {} not []
-  const {favorites, addCharacter, removeCharacter} = useContext(FavoritesContext)
+  const { favorites } = useContext(FavoritesContext)
 //create variable for heart
   //const isFavorite = false;
   //need to change to state
@@ -29,10 +29,9 @@ function ProductCard({product}) {
     <div className='product-card'> 
      {
             isFavorite?
-            <IoHeartCircle onClick={()=>removeCharacter(product.id)} className='heart-icon' />
+            <IoHeartCircle className='heart-icon' />
             :
-            <IoHeartCircleOutline onClick={()=>addCharacter(product)}
-            className='heart-icon' />
+            <IoHeartCircleOutline className='heart-icon' />
           }
         {/* <IoHeartCircle className='heart-icon'/> */}
        <div className='product-img'><img src={product.image} /></div>
