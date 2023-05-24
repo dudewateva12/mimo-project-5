@@ -56,10 +56,12 @@
     background-color: white;
 }
 
-.product-info button{
+.add-to-cart-btn{
     background-color: yellow;
     font-weight: bold;
     padding: 10px;
-    max-width: 20%;
-    
+    max-width: 100%;
+    cursor: pointer;
 }
+
+

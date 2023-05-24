@@ -1,0 +1,30 @@
+.contact-us-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: red 2px solid;
+    height: 70vh;
+
+
+}
+.form-elements{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: green 2px solid;
+    height: 100%;
+    align-items: center;
+    width: 50%;
+}
+.form-elements input{
+    margin: 10px;
+    
+}
+
+.submit-btn{
+    background-color: #3A4895;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    width: 70%;
+}
